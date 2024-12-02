@@ -1,0 +1,82 @@
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.6); /* Fundo levemente escurecido */
+}
+
+.login-box {
+  background: rgba(0, 128, 0, 0.85); /* Fundo verde translúcido */
+  padding: 50px 60px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  width: 500px; /* Aumenta a largura da caixa de login */
+  text-align: center;
+  color: white;
+}
+
+.login-box h2 {
+  margin-bottom: 30px;
+  font-size: 32px; /* Aumenta o tamanho do título */
+  font-weight: bold;
+  color: #ffd700; /* Cor dourada */
+}
+
+.div-login {
+  margin-bottom: 30px; /* Aumenta o espaçamento entre os campos */
+  text-align: left;
+}
+
+#usu-txt, #senha-txt, #email-txt {
+  font-size: 18px; /* Aumenta o tamanho do texto */
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+  width: 100%;
+  padding: 15px; /* Aumenta o padding para os campos de texto */
+  border: 1px solid #ccc;
+  border-radius: 6px; /* Aumenta a curvatura das bordas */
+  font-size: 16px;
+  color: #333;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+  border-color: #ffd700;
+  outline: none;
+}
+
+button {
+  background-color: #ffd700;
+  color: black;
+  border: none;
+  font-weight: bold;
+  padding: 15px 25px; /* Aumenta o tamanho do botão */
+  border-radius: 6px;
+  font-size: 18px; /* Aumenta o tamanho do texto do botão */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #ffcc00;
+}
+
+p {
+  color: white;
+  font-size: 16px;
+}
+
+p a, .div-login a{
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p a:hover, .div-login a:hover{
+  text-decoration: underline;
+}

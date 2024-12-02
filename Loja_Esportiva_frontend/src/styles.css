@@ -1,0 +1,188 @@
+/* Estilos Globais */
+body, p, h1, h2, input, textarea {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: url('../public/bg.webp');
+  background-size: cover; /* A imagem de fundo cobre toda a tela */
+  background-position: center center; /* A imagem se mantém centralizada */
+  background-attachment: fixed; /* A imagem de fundo ficará fixa enquanto a página rola */
+  min-height: 100vh; /* Garante que o fundo ocupe toda a altura da tela */
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF; /* Texto branco para contraste */
+  margin: 0; /* Remove a margem padrão do body */
+  padding: 0; /* Remove o padding */
+}
+
+/* Estilo do Cabeçalho */
+#barraNav {
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo preto transparente */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+#logo img {
+    width: 100px; /* Ajuste a largura do logo */
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 8px;
+    border: 2px solid #ffcc00; /* Cor da borda amarela */
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
+    color: #000; /* Texto preto */
+}
+
+.material-icons {
+    cursor: pointer;
+    color: #ffcc00;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro translúcido */
+    min-width: 140px; /* Largura um pouco maior */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5); /* Sombra mais destacada */
+    z-index: 1;
+    padding: 0;
+    border-radius: 8px; /* Bordas arredondadas */
+  }
+
+  .dropdown-content a {
+    color: #FFD700; /* Dourado para destacar */
+    padding: 10px 20px; /* Mais espaçamento nos links */
+    text-decoration: none;
+    display: block;
+    font-weight: bold; /* Negrito para destaque */
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    border-radius: 5px; /* Bordas suaves nos links */
+  }
+
+  .dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Efeito de hover sutil com fundo claro */
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover #acount {
+    color: #FFD700;
+  }
+
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.menu a {
+    color: #ffcc00;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu a:hover {
+    background-color: rgba(255, 204, 0, 0.2);
+    border-radius: 5px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 150px;
+}
+
+.foot {
+    flex: 1 1 150px;
+    padding: 10px;
+}
+
+.foot h2 {
+    color: #ffcc00;
+}
+
+.foot ul {
+    list-style: none;
+    padding: 0;
+}
+
+.foot li a {
+    color: white;
+    text-decoration: none;
+}
+
+.foot li a:hover {
+    border-bottom: 2px solid #ffcc00;
+}
+
+
+#pagamento img, #social img {
+    max-width: 50px;
+    margin: 5px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    #ajuda, #sobre, #pagamento, #social {
+        width: 100%;
+    }
+    #logo img {
+        width: 120px;
+    }
+}
+#logo img {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#logo img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#barraNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#logo {
+    flex-shrink: 0;
+}

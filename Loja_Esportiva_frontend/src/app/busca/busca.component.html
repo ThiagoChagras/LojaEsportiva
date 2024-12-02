@@ -1,0 +1,21 @@
+<input type="text" [(ngModel)]="termo" placeholder="Insira sua busca">
+<button (click)="fazerBusca()">Buscar</button><br>
+
+
+<h3 class="produtos" *ngIf="lista.length<=0">{{mensagem}}</h3>
+
+<main>
+    <div *ngFor="let item of lista" class="produto">
+        <div class="produtos">
+            <h4>{{mensagem}}</h4>
+          <a (click)="verDetalhe(item)">
+            <img src="./{{item.codigo}}.png" alt="{{item.nome}}">
+            <p class="nome">{{item.nome}}</p>
+            <p class="descritivo">{{item.descritivo}}</p>
+            <p class="valor">R${{item.valor}}</p>
+            <button (click)="verDetalhe(item)">Ver Mais</button>
+            <button *ngIf="item.quantidade>0" (click)="verDetalhe(item)">Comprar</button>
+          </a>
+        </div>
+      </div>
+</main>

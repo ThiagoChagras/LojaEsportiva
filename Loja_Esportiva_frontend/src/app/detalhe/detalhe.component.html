@@ -1,0 +1,11 @@
+<main>
+    <h4>{{mensagem}}</h4>
+    <div *ngIf="item.codigo>0">
+      <h1>{{item.nome}}</h1>
+      <img src="./{{item.codigo}}.png" alt="{{item.nome}}"><br>
+      <p class="descritivo">{{item.descritivo}}</p><br>
+      <p class="valor">R$ {{item.valor | number: '1.2-2'}}</p> <br>
+      <button *ngIf="item.quantidade>0" (click)="comprar(item)">Comprar</button>
+      <h4 *ngIf="item.quantidade<=0">Sem estoque</h4>
+    </div>
+</main>

@@ -1,0 +1,68 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.068);
+  }
+
+.esqueci-box {
+    background: rgba(0, 128, 0, 0.85); /* Fundo verde translúcido para combinar com o tema esportivo */
+    padding: 50px 60px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    width: 500px; /* Aumenta a largura da caixa de cadastro */
+    text-align: center;
+    color: white;
+  }
+  
+  .esqueci-box h1 {
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffd700; /* Cor dourada */
+  }
+  .esqueci-box h2{
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffd700; /* Cor dourada */
+  }
+
+  .div-esqueci {
+    margin-bottom: 30px; /* Espaçamento entre os campos */
+    text-align: left;
+  }
+
+  #email-txt {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ddd;
+  }
+
+  input[type="email"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+  }
+
+  button {
+    background-color: #ffd700;
+    color: black;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #ffcc00;
+  }

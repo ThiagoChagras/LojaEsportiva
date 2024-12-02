@@ -1,0 +1,11 @@
+<main>
+    <div class="esqueci-box">
+        <h1>Redefinir Senha</h1>
+        <h2><b>{{mensagem}}</b></h2>
+        <div class="div-esqueci">
+            <p id="email-txt">E-mail</p>
+            <input type="email" [(ngModel)]="obj.email" placeholder="Insira seu email"><br>
+        </div>
+        <button (click)="reenviar()">Enviar</button>
+    </div>
+</main>

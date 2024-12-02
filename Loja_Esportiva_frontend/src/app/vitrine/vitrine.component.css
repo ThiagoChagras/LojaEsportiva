@@ -1,0 +1,60 @@
+main {
+  display: flex;
+  justify-content: center; /* Centraliza os itens no centro */
+  flex-wrap: wrap; /* Permite que os itens "quebrem" a linha em telas menores */
+  gap: 20px; /* Espaçamento entre os produtos */
+  padding: 20px;
+}
+
+/* Estilo do Produto */
+.produto {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  text-align: center;
+  flex-basis: calc(50% - 40px); /* Ocupa 50% da largura menos o espaçamento */
+  max-width: 250px;
+}
+.produto .nome {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.produto .descritivo {
+  font-size: 0.9em;
+  color: #848b20;
+}
+
+.produto .valor {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #e63946;
+}
+
+.produto:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
+}
+.produto img {
+  width: 100%; /* Imagem ocupa toda a largura do container */
+  height: auto; /* Mantém a proporção da imagem */
+  border-bottom: 2px solid #ffcc00; /* Borda inferior amarela para destacar a imagem */
+}
+
+button {
+  background-color: #ffd700; /* Fundo dourado para o botão */
+  color: black;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffcc00; /* Mais claro no hover */
+}

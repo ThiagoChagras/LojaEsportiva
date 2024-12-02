@@ -1,0 +1,14 @@
+<main>
+    <div *ngFor="let item of itens" class="produto">
+      <div class="produtos">
+        <a>
+          <img src="./{{item.codigo}}.png" alt="{{item.nome}}">
+          <p class="nome">{{item.nome}}</p>
+          <p class="descritivo">{{item.descritivo}}</p>
+          <p class="valor">R${{item.valor}}</p>
+          <button (click)="abrirDetalhe(item)">Ver Mais</button>
+          <button *ngIf="item.quantidade>0" (click)="adicionarItem(item)">Comprar</button>
+        </a>
+      </div>
+    </div>
+  </main>

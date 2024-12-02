@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NETSHIRTS</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header id="barraNav">
+    <a href="./vitrine" id="logo"><img src="./logo.png" class="logotipo" alt="Logo"></a>
+    <nav>
+      <a href="./busca"><i id="procura" class="material-icons">search</i></a>
+    </nav>
+    <div class="dropdown">
+      <i id="account" class="material-icons">person</i>
+      <div class="dropdown-content">
+        <a href="./login">Login</a>
+        <a href="./cliente">Criar Conta</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="menu">
+    <a href="./vitrine">Vitrine</a>
+    <a href="./cesta">Cesta de compras</a>
+  </nav>
+  <app-root></app-root>
+  <footer>
+    <div id="ajuda" class="foot">
+      <ul>
+        <li><a href="#">Dúvidas Gerais</a></li>
+        <li><a href="#">Politica de Trocas</a></li>
+        <li><a href="#">Fale conosco</a></li>
+      </ul>
+    </div>
+
+    <div id="sobre" class="foot">
+      <h2>Sobre nós</h2>
+      <p>
+        A nossa loja oferece camisas de todos os times do Brasil a preços amigáveis, promovendo a paixão pelo esporte de forma acessível a todos.
+      </p>
+      <p><a href="#">Saiba mais sobre nossos valores</a></p>
+    </div>
+
+    <div id="pagamento" class="foot">
+      <h2>Formas de pagamento</h2>
+      <img src="./cartao_1.png" alt="Mastercard">
+      <img src="./cartao_2.png" alt="Visa">
+      <img src="./cartao_3.png" alt="Elo">
+      <img src="./cartao_4.png" alt="Hipercard">
+      <img src="./cartao_5.png" alt="PIX">
+    </div>
+    <div id="social" class="foot">
+      <h2>Nossas redes sociais</h2>
+      <a href="https://www.facebook.com" target="_blank"><img src="./social_1.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com" target="_blank"><img src="./social_2.png" alt="Instagram"></a>
+      <a href="https://www.youtube.com" target="_blank"><img src="./social_3.png" alt="Youtube"></a>
+    </div>
+  </footer>
+</body>
+</html>

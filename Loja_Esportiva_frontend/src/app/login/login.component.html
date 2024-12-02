@@ -1,0 +1,19 @@
+<section>
+    <div class="login-box">
+      <h2>Entrar</h2>
+      <b>{{mensagem}}</b><br>
+    <div class="div-login">
+      <p id="email-txt">Email</p>
+      <input type="email" [(ngModel)]="obj.email"><br>
+    </div>
+    <div class="div-login">
+      <p id="senha-txt">Senha</p>
+      <input type="password" [(ngModel)]="obj.senha"><br>
+      <a href="./esqueci">Recuperar senha !!</a>
+    </div>
+    <p>Não tem conta? <a href="./cliente">Cadastre-se</a></p>
+    <div id="login">
+      <button type="submit" value="Login" (click)="fazerLogin()">Entrar</button>
+    </div>
+    </div>
+</section>

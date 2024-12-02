@@ -1,0 +1,43 @@
+<main>
+    <div class="login-box">
+        <h2>Meu Cadastro</h2>
+        <b>{{mensagem}}</b><br>
+        <div class="div-login">
+            <p id="usu-txt">Nome</p>
+            <input type="text" [(ngModel)]="obj.nome" placeholder="Insira seu nome"><br>
+        </div>
+        <div class="div-login">
+            <p id="email-txt">Email</p>
+            <input type="email" [(ngModel)]="obj.email" placeholder="Insira seu email"><br>
+        </div>
+        <div class="div-login">
+            <p id="doc-txt">Documento</p>
+            <input type="text" [(ngModel)]="obj.documento" placeholder="Insira seu CPF"><br>
+        </div>
+        <div class="div-login">
+            <p id="telefone-txt">Telefone</p>
+            <input type="text" [(ngModel)]="obj.telefone" placeholder="Insira seu Telefone"><br>
+        </div>
+        <div class="div-login">
+            <p id="logradouro-txt">Logradouro</p>
+            <input type="text" [(ngModel)]="obj.logradouro" placeholder="Insira seu logradouro">
+        </div>
+        <div class="div-login">
+            <p id="cep-txt">CEP</p>
+            <input type="text" [(ngModel)]="obj.cep" placeholder="Insira seu CEP"><br>
+        </div>
+        <div class="div-login">
+            <p id="cidade-txt">Cidade</p>
+            <input type="text" [(ngModel)]="obj.cidade" placeholder="Insira sua cidade"><br>
+        </div>
+        <div class="div-login">
+            <p id="complemento-txt">Complemento</p>
+            <input type="text" [(ngModel)]="obj.complemento" placeholder="Insira um complemento"><br>
+        </div>
+        <div class="div-login">
+            <p id="senha-txt">Senha</p>
+            <input type="password" [(ngModel)]="obj.senha" placeholder="Insira sua senha"><br>
+        </div>
+        <button (click)="gravar()">Gravar</button>
+    </div>
+</main>

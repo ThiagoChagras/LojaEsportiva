@@ -1,0 +1,159 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.068);
+  padding: 0 10px; /* Adicionando espaçamento para evitar que o conteúdo fique colado às bordas */
+}
+
+.cesta-box {
+  background-color: #006400b5; /* Verde mais escuro */
+  width: 100%;
+  max-width: 900px; /* Tamanho da caixa da cesta ajustado para uma largura menor */
+  margin: 20px auto; /* Centraliza a cesta */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.cesta-box h1 {
+  margin-bottom: 20px; /* Menor margem para título */
+  font-size: 28px; /* Font menor para título */
+  font-weight: bold;
+  color: #ffd700;
+  text-align: center;
+}
+
+.tabela {
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px; /* Tamanho de fonte menor para a tabela */
+  letter-spacing: 1px; /* Menos espaçamento entre letras */
+  color: #fff;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+th, td {
+  padding: 8px 12px; /* Diminui o padding para tornar a tabela mais compacta */
+  text-align: center;
+  border: 1px solid #ffd700; /* Reduz a espessura das bordas */
+}
+
+th {
+  background-color: rgba(255, 215, 0, 0.8);
+  font-weight: bold;
+  color: black;
+}
+
+td img {
+  width: 35px; /* Menor tamanho para as imagens */
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 28px; /* Ajustando tamanho de fonte do título */
+  letter-spacing: 1px;
+  color: #fff;
+  text-align: center;
+}
+
+p {
+  color: #fff; /* Texto branco para melhor contraste */
+}
+
+tr:hover {
+  background-color: rgba(255, 215, 0, 0.3); /* Cor de destaque ao passar o mouse */
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+tfoot td {
+  font-weight: bold;
+  font-size: 16px; /* Menor tamanho de fonte no rodapé */
+  background-color: rgba(255, 215, 0, 0.85);
+  color: black;
+}
+
+button {
+  background-color: #ffd700;
+  color: black;
+  border: none;
+  padding: 12px 20px; /* Menor padding */
+  border-radius: 6px;
+  font-size: 16px; /* Font menor para o botão */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #ffcc00;
+}
+
+.produto img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #ffcc00;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .tabela {
+      font-size: 14px; /* Font menor para telas maiores */
+  }
+
+  th, td {
+      padding: 6px 10px; /* Menor padding em telas menores */
+  }
+
+  button {
+      padding: 10px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tabela {
+      font-size: 12px; /* Font ainda menor para telas médias */
+  }
+
+  th, td {
+      padding: 6px 8px; /* Ajustando para mais compacto */
+  }
+
+  button {
+      padding: 8px 12px;
+  }
+
+  table {
+      font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tabela {
+      font-size: 10px; /* Font muito menor para telas pequenas */
+  }
+
+  th, td {
+      padding: 4px 6px; /* Diminui ainda mais o padding */
+  }
+
+  button {
+      padding: 8px 12px;
+  }
+
+  table {
+      font-size: 10px; /* Ajusta o tamanho da tabela em telas muito pequenas */
+  }
+}
